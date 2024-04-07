@@ -45,6 +45,7 @@ async function connectAndQuery() {
 
 app.get("/", (req, res) => {
   res.send("Hellooo");
+  console.log("started");
 })
 
 app.get("/todos", async (req, res) => {
@@ -136,9 +137,7 @@ app.post("/todo-complete/:action", async (req, res) => {
 
 app.put("todo-edit/:action", async (req, res) => {});
 
-app.get("/", (req, res) => {
-  console.log("started");
-});
+
 
 // app.use(express.static("./reactfront/build"));
 // app.get("*", (req, res) => {
