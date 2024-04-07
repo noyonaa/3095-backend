@@ -43,6 +43,10 @@ async function connectAndQuery() {
   }
 }
 
+app.get("/test", (req, res) => {
+  res.redirect("https://instagram.com/noyonaa");
+})
+
 app.get("/", (req, res) => {
   res.send("Hellooo");
   console.log("started");
