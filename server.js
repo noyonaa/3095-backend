@@ -7,7 +7,7 @@ const sql = require("mssql");
 const bodyParser = require("body-parser");
 
 // Define the port number
-const port = 5000;
+const port = 3000;
 const path = require("path");
 
 app.use(bodyParser.json());
